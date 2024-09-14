@@ -1,0 +1,138 @@
+/* style.css */
+
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for the app */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0fb39d, #79efa4); /* Gradient background */
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    color: #444; /* Slightly lighter text */
+}
+
+/* Main container for the app content */
+.container {
+    background-color: #ffffff; /* White background for the app */
+    border-radius: 16px; /* More rounded corners */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow for emphasis */
+    padding: 30px;
+    width: 90%;
+    max-width: 500px; /* Max width to keep it from stretching too much */
+    transition: transform 0.3s ease; /* Subtle hover animation */
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Hover effect */
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    color: #2e91fa; /* Accent color */
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 600; /* Bold header */
+    letter-spacing: 1px; /* Adds space between letters */
+}
+
+/* Input field styling */
+input[type="text"] {
+    width: 100%; /* Full width */
+    padding: 12px; /* More padding for a comfortable touch target */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Slightly more rounded corners */
+    margin-bottom: 15px; /* Spacing below the input */
+    font-size: 1rem; /* Increased font size */
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none; /* Remove default outline */
+    border-color: #2e91fa; /* Blue border when focused */
+}
+
+/* Container for the input and button */
+.input-container {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    margin-bottom: 15px; /* Adds space below the input box and button */
+}
+
+.input-container input {
+    flex: 1; /* Allows the input to use remaining space */
+    padding: 10px; /* Adds padding inside the input box */
+    margin-right: 10px; /* Adds space between the input and button */
+    border-radius: 8px;
+}
+
+.input-container button {
+    margin-bottom: 13px;
+    padding: 10px 20px; /* Adds padding inside the button */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+/* Button styling */
+button {
+    background: linear-gradient(135deg, #6dd5ed, #2193b0); /* Gradient background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 8px; /* More rounded corners */
+    padding: 12px; /* Bigger padding for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    font-weight: 600; /* Bold button text */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Task list styling */
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin-top: 20px;
+}
+
+/* Task item styling */
+li {
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between text and button */
+    align-items: center; /* Center the text vertically */
+    padding: 12px; /* Padding around each task */
+    margin-bottom: 10px; /* Adds space between task items */
+    background: #fdd835; /* Bright yellow for tasks */
+    border-radius: 12px; /* Rounded task boxes */
+    color: #444; /* Darker text for better readability */
+    font-size: 1rem; /* Font size */
+    transition: background-color 0.3s ease, transform 0.3s; /* Smooth transition */
+}
+
+li:hover {
+    background-color: #ffc107; /* Darker yellow on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Delete button styling */
+li button {
+    background-color: #ff5252; /* Bright red for delete */
+    padding: 8px 12px; /* Padding for the button */
+    border: none; /* No border */
+    border-radius: 8px; /* Slightly more rounded corners */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease;
+}
+
+li button:hover {
+    background-color: #ff1744; /* Darker red on hover */
+}
